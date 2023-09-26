@@ -7,49 +7,49 @@ int main() {
     string line; 
     int totalScore = 0; 
     int score; 
-    ifstream myfile ("RyanProb2Input.txt");
+    ifstream myfile ("OliverProb2Input.txt");
 
     while(getline(myfile, line)) {
         if(line[0] == 'A') { // rock
             if(line[2] == 'X') { 
+                score += 3; // scissors
+                score += 0; // lose
+            }
+            if(line[2] == 'Y') { 
                 score += 1; // rock
                 score += 3; // draw
             }
-            if(line[2] == 'Y') { 
+            if(line[2] == 'Z') { 
                 score += 2; // paper
                 score += 6; // win
-            }
-            if(line[2] == 'Z') { 
-                score += 3; // scissors
-                score += 0; // loss
             }
         }
         if(line[0] == 'B') { // paper
             if(line[2] == 'X') { 
                 score += 1; // rock
-                score += 0; // draw
+                score += 0; // lose
             }
             if(line[2] == 'Y') { 
                 score += 2; // paper
-                score += 3; // win
+                score += 3; // draw
             }
             if(line[2] == 'Z') { 
                 score += 3; // scissors
-                score += 6; // loss
+                score += 6; // win
             }
         }
         if(line[0] == 'C') { // scissors
             if(line[2] == 'X') { 
-                score += 1; // rock
-                score += 6; // draw
+                score += 2; // paper
+                score += 0; // lose
             }
             if(line[2] == 'Y') { 
-                score += 2; // paper
-                score += 0; // win
+                score += 3; // scissors
+                score += 3; // draw
             }
             if(line[2] == 'Z') { 
-                score += 3; // scissors
-                score += 3; // loss
+                score += 1; // rock
+                score += 6; // win
             }
         }
         totalScore += score;
