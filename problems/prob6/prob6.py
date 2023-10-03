@@ -2,7 +2,7 @@
 
 def part1():
     last_four = []
-    with open("prob6input.txt") as file: 
+    with open("/Users/oliverwolff/Desktop/CS 3:4/advent-of-code-template/problems/prob6/prob6input.txt") as file: 
         string = file.read().strip()
         for i in range(0,len(string)-1): 
             c = string[i]
@@ -17,7 +17,7 @@ def part1():
 
 def part2():
     last_fourteen = []
-    with open("prob6input.txt") as file: 
+    with open("/Users/oliverwolff/Desktop/CS 3:4/advent-of-code-template/problems/prob6/prob6input.txt") as file: 
         string = file.read().strip()
         for i in range(0,len(string)-1): 
             c = string[i]

@@ -1,6 +1,6 @@
 nums = []
 total = 0
-with open("OliverProb4Input.txt") as file:
+with open("/Users/oliverwolff/Desktop/CS 3:4/advent-of-code-template/problems/prob4/OliverProb4Input.txt") as file:
     total = 0
     for line in file: 
         numIdx = 0
